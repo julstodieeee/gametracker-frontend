@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/gametracker/static/css/main.2ce387f2.css",
-    "main.js": "/gametracker/static/js/main.475eb31a.js",
+    "main.css": "/gametracker/static/css/main.1dbedf7f.css",
+    "main.js": "/gametracker/static/js/main.bd5d1f41.js",
     "index.html": "/gametracker/index.html",
-    "main.2ce387f2.css.map": "/gametracker/static/css/main.2ce387f2.css.map",
-    "main.475eb31a.js.map": "/gametracker/static/js/main.475eb31a.js.map"
+    "main.1dbedf7f.css.map": "/gametracker/static/css/main.1dbedf7f.css.map",
+    "main.bd5d1f41.js.map": "/gametracker/static/js/main.bd5d1f41.js.map"
   },
   "entrypoints": [
-    "static/css/main.2ce387f2.css",
-    "static/js/main.475eb31a.js"
+    "static/css/main.1dbedf7f.css",
+    "static/js/main.bd5d1f41.js"
   ]
 }
