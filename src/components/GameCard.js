@@ -9,8 +9,10 @@ function GameCard({ game }) {
         alt={game.name}
         onError={(e) => (e.target.style.display = "none")}
       />
+
       <h3>{game.name}</h3>
       <p>{game.description}</p>
+
       <a href={game.url} target="_blank" rel="noopener noreferrer">
         <button>🎮 Jugar</button>
       </a>

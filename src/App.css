@@ -1,33 +1,196 @@
-@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Press+Start+2P&display=swap");
 
 body {
   background-color: #000;
   color: #fff;
   font-family: "Orbitron", sans-serif;
-  text-align: center;
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 
-.App-header h1 {
-  font-size: 2.5rem;
-  color: cyan;
-  text-shadow: 0 0 20px cyan, 0 0 40px #00ffff;
+/* ---- TITULO PRINCIPAL ---- */
+
+.app-header h1 {
+  font-size: 3.5rem;
+  margin-top: 30px;
+  color: #00eaff;
+
+  text-shadow: 
+    0 0 10px #00eaff,
+    0 0 20px #00eaff,
+    0 0 40px #00eaff;
+
+  animation: neonFlicker 2.5s infinite alternate ease-in-out;
 }
 
-.App-header p {
-  color: #00ffff;
-  text-shadow: 0 0 15px cyan;
+@keyframes neonFlicker {
+  0% {
+    opacity: 0.7;
+    text-shadow: 0 0 8px #00eaff;
+  }
+  50% {
+    opacity: 1;
+    text-shadow: 0 0 22px #00ffff, 0 0 45px #00ffff;
+  }
+  100% {
+    opacity: 0.85;
+    text-shadow: 0 0 15px #00eaff;
+  }
 }
 
-.game-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+/* ---- SUBTITULOS ---- */
+
+.neon-subtitle {
+  font-size: 1.8rem;
+  margin-top: 40px;
+  color: #ff00ff;
+  text-shadow: 
+    0 0 10px #ff00ff,
+    0 0 20px #ff00ff,
+    0 0 35px #ff00ff;
+
+  animation: subtitleGlow 1.7s infinite alternate ease-in-out;
+}
+
+@keyframes subtitleGlow {
+  0% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+    text-shadow: 0 0 28px #ff66ff, 0 0 45px #ff00ff;
+  }
+}
+
+/* ---- GRID DE JUEGOS ---- */
+
+.game-section {
+  padding: 40px 20px;
+}
+
+/* ---- FORMULARIO AÑADIR JUEGO ---- */
+
+.add-game-section {
+  background: rgba(0, 0, 0, 0.7);
+  border-top: 2px solid #00ffff;
+  padding: 50px 20px;
+  margin-top: 60px;
+  box-shadow: inset 0 0 20px #00ffff;
+}
+
+.game-form {
+  display: flex;
+  flex-direction: column;
   gap: 20px;
-  justify-items: center;
-  padding: 40px;
+  width: 80%;
+  max-width: 550px;
+  margin: auto;
 }
 
-.extras {
-  margin-top: 50px;
+.game-form input {
+  padding: 14px;
+  border-radius: 8px;
+  background: #000;
+  border: 2px solid #00ffff;
+  color: #00ffff;
+  font-family: "Press Start 2P", cursive;
+  box-shadow: 0 0 10px #00ffff;
+}
+
+.game-form input::placeholder {
+  color: #90f6ff;
+}
+
+.game-form button {
+  padding: 16px;
+  background: #000;
+  border: 2px solid #ff00ff;
+  color: #ff00ff;
+  font-family: "Press Start 2P", cursive;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 0 15px #ff00ff;
+}
+
+.game-form button:hover {
+  background: #ff00ff;
+  color: #000;
+  box-shadow: 0 0 25px #ff00ff;
+}
+
+/* ---- RESEÑAS ---- */
+
+.reviews-section {
+  padding: 50px 20px;
+  margin-top: 70px;
+  border-top: 2px solid #ff00ff;
+}
+
+.reviews-form {
+  width: 80%;
+  max-width: 550px;
+  margin: auto;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.reviews-form textarea {
+  padding: 15px;
+  border-radius: 10px;
+  background: #000;
+  border: 2px solid #ff00ff;
+  color: #ff00ff;
+  font-family: "Press Start 2P", cursive;
+  min-height: 140px;
+}
+
+.reviews-form button {
+  padding: 16px;
+  background: #000;
+  border: 2px solid #00ffff;
+  color: #00ffff;
+  font-family: "Press Start 2P", cursive;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.reviews-form button:hover {
+  background: #00ffff;
+  color: #000;
+}
+
+.review {
+  background: rgba(255, 0, 255, 0.1);
+  border: 2px solid #ff00ff;
+  padding: 20px;
+  margin: 15px auto;
+  max-width: 600px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px #ff00ff;
+  font-family: "Press Start 2P", cursive;
+}
+
+.review span {
+  display: block;
+  margin-top: 10px;
+  color: #00ffff;
+}
+
+/* ---- FOOTER ---- */
+
+footer {
+  margin-top: 80px;
+  padding: 25px;
+  border-top: 2px solid #00ffff;
+  background: rgba(0, 0, 0, 0.8);
+  box-shadow: inset 0 0 20px #00ffff;
+  font-size: 0.9rem;
+}
+
+footer p {
+  color: #00eaff;
+  text-shadow: 0 0 10px #00eaff;
 }
